@@ -233,6 +233,7 @@ class main {
 
         for (int i = 0; i < accounts.length; i++) {
             System.out.println(accounts[i].username + ": " + accounts[i].balance);
+        }
 
         Scanner sc = new Scanner(System.in);
         Mylinkedlist mylinkedlist = new Mylinkedlist();
@@ -253,11 +254,8 @@ class main {
                 case 4: return;
             }
         }
-
         }
-
     }
 
-}
 
 
