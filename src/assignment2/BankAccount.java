@@ -224,6 +224,16 @@ class main {
 
     public static void main(String[] args) {
 
+
+        BankAccount[] accounts = new BankAccount[3];
+
+        accounts[0] = new BankAccount(1, "john", 100);
+        accounts[1] = new BankAccount(2, "jane", 200);
+        accounts[2] = new BankAccount(3, "julie", 300);
+
+        for (int i = 0; i < accounts.length; i++) {
+            System.out.println(accounts[i].username + ": " + accounts[i].balance);
+
         Scanner sc = new Scanner(System.in);
         Mylinkedlist mylinkedlist = new Mylinkedlist();
 
@@ -243,6 +253,9 @@ class main {
                 case 4: return;
             }
         }
+
+        }
+
     }
 
 }
